@@ -41,7 +41,6 @@ function Map() {
         url: `https://api.openweathermap.org/data/2.5/onecall?lat=${mapCtx.formState.newLatlng.lat}&lon=${mapCtx.formState.newLatlng.lng}&exclude=minutely,daily&units=metric&appid=`,
         key: key,
       }).then((data) => {
-        console.log(data);
         const icon = data.current.weather[0].icon;
         const imageUrl = `http://openweathermap.org/img/wn/${icon}@2x.png`;
         const dtWeather = {
