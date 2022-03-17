@@ -31,7 +31,7 @@ function Map() {
   const [desOrAce, setDesOrAce] = useState(false);
   const [desOrAceCycle, setDesOrAceCycle] = useState(false);
   const [dataWeather, setDataWeather] = useState("");
-  const { error, sendRequest: requestWeather, setError } = useHttp();
+  const {  sendRequest: requestWeather } = useHttp();
   const key = process.env.REACT_APP_WEATHER;
   const mapCtx = useContext(MapContext);
 
@@ -41,7 +41,7 @@ function Map() {
         url: `https://api.openweathermap.org/data/2.5/onecall?lat=${mapCtx.formState.newLatlng.lat}&lon=${mapCtx.formState.newLatlng.lng}&exclude=minutely,daily&units=metric&appid=`,
         key: key,
       }).then((data) => {
-        console.log(data);
+        
         const icon = data.current.weather[0].icon;
         const imageUrl = `http://openweathermap.org/img/wn/${icon}@2x.png`;
         const dtWeather = {

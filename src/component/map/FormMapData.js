@@ -111,8 +111,6 @@ function FormMapData(props) {
     mapCtx.closeFormHandler();
   };
 
-  console.log(mapCtx.formState);
-
   return (
     <Fragment>
       <form className={formClass} onSubmit={submitHandler}>
