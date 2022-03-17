@@ -1,0 +1,33 @@
+.popup .leaflet-popup-content-wrapper {
+  background-color: black;
+  border-radius: 5px;
+  padding-right: 0.6rem;
+  color: azure;
+  /* width: 15rem;
+  text-align: left;
+  height: 10rem; */
+}
+.popup .leaflet-popup-tip {
+  background-color: black;
+}
+
+.popup .leaflet-popup-content {
+  font-size: 1rem;
+  /* margin: 1px auto; */
+}
+
+.popuprun {
+  border-left: 6px solid yellow;
+  border-radius: 10px;
+}
+
+.popupcycle {
+  border-left: 8px solid #3c8683;
+  border-radius: 10px;
+}
+
+.description {
+  font-family: "Ubuntu";
+  font-weight: bold;
+  /* margin: 1px; */
+}

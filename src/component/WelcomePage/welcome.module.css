@@ -1,0 +1,13 @@
+.welcome {
+  margin: 3rem auto;
+  text-align: center;
+}
+h1 {
+  font-size: 5rem;
+  color: #126e82;
+}
+.welcome h2,
+h3,
+h4 {
+  color: #51c4d3;
+}

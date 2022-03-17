@@ -1,0 +1,44 @@
+.activity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #42484d;
+  margin-top: 1rem;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+.itemswork {
+  display: flex;
+}
+.allitems {
+  display: flex;
+}
+
+.title {
+  color: rgb(245, 237, 237);
+  margin: 0.5rem;
+}
+.items {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+.activityrun {
+  border-left: 7px solid #3c8683;
+}
+.activitycycle {
+  border-left: 7px solid rgb(235, 235, 13);
+}
+
+.input {
+  margin-top: 4px;
+  border-radius: 4px;
+  color: white;
+  background-color: #42484d;
+  cursor: pointer;
+}
+
+.input:hover {
+  background-color: #35393b;
+}
