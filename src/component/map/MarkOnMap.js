@@ -45,6 +45,7 @@ const MarkOnMap = () => {
                 >
                   <div className="description">
                     <p>{pos.description}</p>
+                    <p>Distance-To-User-Location: {pos.latlng.disToUser} Km</p>
                     <p>Temperature: {pos.weather.curTemp} °C</p>
                     <p>Feels_Like: {pos.weather.feelsLike} °C</p>
                     <p>Next2Hours: {pos.weather.next2Hours} °C</p>

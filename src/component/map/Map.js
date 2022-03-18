@@ -57,9 +57,7 @@ function Map() {
         }
       });
     }
-  }, [mapCtx.formState.newLatlng]);
-
-  console.log(dataWeather);
+  }, [mapCtx.formState.newLatlng, requestWeather, key]);
 
   const onFlyHandler = (data) => {
     setLatFly(data);
@@ -169,7 +167,7 @@ function Map() {
         />
         {!mapCtx.openForm && <LatlngFinder myPosition={position} />}
 
-        <MarkOnMap />
+        {!mapCtx.openForm && <MarkOnMap />}
         <CalculateDistance />
         <FlyToMarker onFlyLast={latFly} />
       </MapContainer>
