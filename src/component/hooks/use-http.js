@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 
 function useHttp() {
   const [error, setError] = useState({ isError: false, errorData: "" });
 
-  const sendRequest = async (requestConfig) => {
+  const sendRequest = useCallback(async (requestConfig) => {
     setError({ isError: false, errorData: "" });
 
     try {
@@ -24,7 +24,7 @@ function useHttp() {
     } catch (err) {
       setError({ isError: true, errorData: err.message });
     }
-  };
+  }, []);
   return {
     error: error,
     sendRequest: sendRequest,
